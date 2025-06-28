@@ -89,3 +89,30 @@ footer {
     font-size: 0.9rem;
   }
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #0A84FF;
+  color: white;
+  font-size: 1.1em;
+}
+
+td a {
+  text-decoration: none;
+  color: #0A84FF;
+  font-weight: 500;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
