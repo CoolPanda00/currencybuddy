@@ -1,166 +1,95 @@
-:root {
-  --black: #121212;
-  --gold: #D4AF37;
-  --dune: #35312C;
-  --light-grey: #E0E0E0;
-  --very-light-grey: #F5F5F5;
-  --white: #FFFFFF;
-}
-
+/* General Reset & Base Styles */
 body {
-  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--very-light-grey);
-  color: var(--black);
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* sleek black background */
+  color: #e0e0e0; /* light grey text for readability */
+  line-height: 1.6;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* Header Styles */
 header {
-  background-color: var(--black);
-  color: var(--gold);
+  background-color: #3a3a3a; /* dark dune grey header */
+  color: #f5c518; /* gold text for branding highlight */
+  padding: 1em;
   text-align: center;
-  padding: 30px 0;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 1.8em;
 }
 
-header p {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  color: var(--light-grey);
+/* Main Content Styles */
+main {
+  padding: 2em;
 }
 
-main h2 {
-  border-bottom: 2px solid var(--gold);
-  padding-bottom: 5px;
+main p {
+  margin-bottom: 1.5em;
 }
 
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
-  background-color: var(--white);
-}
-
-table, th, td {
-  border: 1px solid var(--light-grey);
-}
-
-th {
-  background-color: var(--dune);
-  color: var(--gold);
+  margin-bottom: 2em;
 }
 
 th, td {
-  padding: 12px;
-  text-align: center;
+  padding: 0.75em;
+  border: 1px solid #444; /* subtle grey borders */
+  text-align: left;
+}
+
+th {
+  background-color: #f5c518; /* gold header background */
+  color: #121212; /* black text in table headers for contrast */
+  font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: var(--very-light-grey);
+  background-color: #1e1e1e; /* slight variation for rows */
 }
 
+/* Footer Styles */
 footer {
-  background-color: var(--black);
-  color: var(--gold);
+  background-color: #3a3a3a; /* dune grey footer */
+  color: #e0e0e0;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 30px;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
+/* Links Styles */
+a {
+  color: #f5c518; /* gold links for brand consistency */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 600px) {
-  th, td {
-    font-size: 0.9rem;
+  main {
+    padding: 1em;
   }
 
   header h1 {
-    font-size: 1.5rem;
-  }
-
-  header p {
-    font-size: 0.9rem;
+    font-size: 1.5em;
   }
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  padding: 0.75em;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-th {
-  background: #0A84FF;
-  color: white;
-  font-size: 1.1em;
-}
-
-td a {
-  text-decoration: none;
-  color: #0A84FF;
-  font-weight: 500;
-}
-
-td a:hover {
-  text-decoration: underline;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1em 0;
-  font-size: 1rem;
-}
-
-th, td {
-  padding: 0.75em;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-th {
-  background: #D4AF37; /* gold */
-  color: black;
-}
-
-tr:nth-child(even) {
-  background: #f5f5f5; /* light dune grey for alternate rows */
-}
-
 body {
-  background-color: #1c1c1c; /* dark grey-black */
-  color: #e0e0e0; /* light grey text */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* black background */
+  color: #ddd; /* light grey text */
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-  color: #D4AF37; /* gold headings */
-}
-
-a {
-  color: #D4AF37;
-}
-
-header, footer {
-  text-align: center;
-  padding: 1em;
-  background: #111;
-}
-
-main.content {
-  max-width: 960px;
-  margin: auto;
-  padding: 1em;
-}
