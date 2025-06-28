@@ -3,98 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learn Forex & Exchange Rates - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
+  <title>Learning Hub - CurrencyBuddy</title>
+  <link rel="stylesheet" href="../css/style.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fb;
-      margin: 0;
-      padding: 0;
-      color: #333;
+    .learning-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
-    header {
-      background-color: #292b2c;
-      color: white;
-      padding: 1rem;
-      text-align: center;
+    
+    .learning-card {
+      background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+      border-radius: 10px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      border: 1px solid #444;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
+    
+    .learning-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(245, 197, 24, 0.2);
+      border-color: #f5c518;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #f0c040;
-      padding-bottom: 0.5rem;
+    
+    .learning-card h3 {
+      color: #f5c518;
       margin-bottom: 1rem;
+      font-size: 1.3em;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    
+    .learning-card p {
+      margin-bottom: 1.5rem;
+      opacity: 0.9;
     }
-    li {
-      margin: 0.8rem 0;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    li:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    a {
-      display: block;
-      padding: 1rem;
+    
+    .learning-card a {
+      display: inline-block;
+      background-color: #f5c518;
+      color: #121212;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
       text-decoration: none;
-      color: #292b2c;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .learning-card a:hover {
+      background-color: #e6b015;
+      transform: translateY(-2px);
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
       font-weight: 500;
+      transition: all 0.3s ease;
     }
-    a:hover {
-      color: #f0c040;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      background-color: #292b2c;
-      color: white;
-      margin-top: 3rem;
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Learn Forex & Exchange Rates</h1>
+    <div class="container">
+      <h1>CurrencyBuddy Learning Hub</h1>
+      <p>Master the fundamentals of forex and exchange rates</p>
+    </div>
   </header>
 
-  <main>
-    <h2>Educational Topics</h2>
-    <ul>
-      <li><a href="/modules/why-exchange-rates-change.html">Why Do Exchange Rates Change?</a></li>
-      <li><a href="/modules/factors-affecting-forex.html">Factors Affecting Forex</a></li>
-      <li><a href="/modules/how-forex-works.html">How Forex Works</a></li>
-      <li><a href="/modules/currency-pairs.html">Currency Pairs</a></li>
-      <li><a href="/modules/economic-indicators.html">Economic Indicators</a></li>
-      <li><a href="/modules/interest-inflation.html">Interest Rates & Inflation</a></li>
-      <li><a href="/modules/global-events.html">Global Events Impact</a></li>
-      <li><a href="/modules/supply-demand.html">Supply & Demand</a></li>
-      <li><a href="/modules/sentiment-trading.html">Sentiment & Speculation</a></li>
-    </ul>
+  <main class="container">
+    <div class="back-nav">
+      <a href="../index.html">← Back to Home</a>
+    </div>
+    
+    <section>
+      <h2>Educational Topics</h2>
+      <p>Explore comprehensive guides to understand how currency markets work and what drives exchange rate movements.</p>
+      
+      <div class="learning-grid">
+        <div class="learning-card">
+          <h3>Why Exchange Rates Change</h3>
+          <p>Understand the fundamental forces that cause currency values to fluctuate in the global market.</p>
+          <a href="why-exchange-rates-change.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Factors Affecting Forex</h3>
+          <p>Discover the key economic and political factors that influence foreign exchange rates.</p>
+          <a href="factors-affecting-forex.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>How Forex Works</h3>
+          <p>Get an introduction to the mechanics of the foreign exchange market and how trading works.</p>
+          <a href="how-forex-works.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Currency Pairs</h3>
+          <p>Learn about major, minor, and exotic currency pairs and how they're quoted in forex markets.</p>
+          <a href="currency-pairs.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Economic Indicators</h3>
+          <p>Understand key economic data releases that move currency markets and how to interpret them.</p>
+          <a href="economic-indicators.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Interest Rates & Inflation</h3>
+          <p>Explore how central bank policies and inflation expectations impact currency values.</p>
+          <a href="interest-inflation.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Global Events Impact</h3>
+          <p>See how geopolitical events, natural disasters, and global crises affect exchange rates.</p>
+          <a href="global-events.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Supply & Demand</h3>
+          <p>Learn the basic economic principles of supply and demand as they apply to currency markets.</p>
+          <a href="supply-demand.html">Learn More</a>
+        </div>
+        
+        <div class="learning-card">
+          <h3>Market Sentiment</h3>
+          <p>Understand how trader psychology and market sentiment drive currency price movements.</p>
+          <a href="sentiment-trading.html">Learn More</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Currency Buddy | Learn, Exchange, Save</p>
+    <div class="container">
+      <p>© 2025 CurrencyBuddy | Learn, Exchange, Save</p>
+    </div>
   </footer>
 </body>
 </html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-
