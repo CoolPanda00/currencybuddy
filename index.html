@@ -2,13 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CurrencyBuddy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CurrencyBuddy - Compare Exchange Rates</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to CurrencyBuddy</h1>
-  <p>Compare live currency exchange rates and find the best deals.</p>
+  <header>
+    <div class="container">
+      <h1>CurrencyBuddy</h1>
+      <p>Your trusted partner to compare, save, and exchange smartly</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Live INR Exchange Rates</h2>
+      <p>Updated in real-time to help you make the best decisions.</p>
+      <table id="ratesTable">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate (per INR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="2">Loading...</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="providers">
+      <h2>Compare Forex Providers</h2>
+      <p>Transparent comparison including hidden charges and markups.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>USD Rate</th>
+            <th>EUR Rate</th>
+            <th>GBP Rate</th>
+            <th>Hidden Charges</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BookMyForex</td>
+            <td>83.5</td>
+            <td>89.2</td>
+            <td>104.8</td>
+            <td>₹200 markup</td>
+          </tr>
+          <tr>
+            <td>Thomas Cook</td>
+            <td>84.0</td>
+            <td>90.0</td>
+            <td>105.5</td>
+            <td>₹350 markup</td>
+          </tr>
+          <tr>
+            <td>Unimoni</td>
+            <td>83.8</td>
+            <td>89.5</td>
+            <td>105.0</td>
+            <td>₹250 markup</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 CurrencyBuddy. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
