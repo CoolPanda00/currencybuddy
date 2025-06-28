@@ -3,41 +3,325 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Supply and Demand in Forex</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Supply & Demand in Forex | CurrencyBuddy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .concept-visual {
+      background-color: #2a2a2a;
+      border: 1px solid #f5c518;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .concept-visual h4 {
+      color: #f5c518;
+      margin-bottom: 1.5rem;
+    }
+    
+    .supply-demand-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .supply-box, .demand-box {
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: left;
+    }
+    
+    .supply-box {
+      background-color: #ff4757;
+      color: white;
+    }
+    
+    .demand-box {
+      background-color: #2ed573;
+      color: white;
+    }
+    
+    .factor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .factor-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s ease;
+    }
+    
+    .factor-card:hover {
+      border-color: #f5c518;
+      transform: translateY(-2px);
+    }
+    
+    .factor-card h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .supply-demand-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Supply and Demand in Forex</h1>
+    <div class="container">
+      <h1>Supply & Demand in Forex</h1>
+      <p>The fundamental forces driving currency exchange rates</p>
+    </div>
   </header>
 
-  <main>
-    <p>Supply and demand affect currency values based on the quantity of a currency available and the desire for it. For example, if demand for USD rises compared to INR, the USD will strengthen against INR.</p>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
 
-    <table>
-      <tr>
-        <th>Factor</th>
-        <th>Effect on Currency</th>
-      </tr>
-      <tr>
-        <td>Increased Demand</td>
-        <td>Currency appreciates</td>
-      </tr>
-      <tr>
-        <td>Increased Supply</td>
-        <td>Currency depreciates</td>
-      </tr>
-    </table>
+    <div class="content-section">
+      <h2>Basic Economic Principles</h2>
+      <p>Supply and demand affect currency values based on the quantity of a currency available and the desire for it. When demand for a currency exceeds its supply, the currency appreciates. When supply exceeds demand, it depreciates.</p>
+      
+      <div class="concept-visual">
+        <h4>Supply & Demand Balance</h4>
+        <div class="supply-demand-grid">
+          <div class="supply-box">
+            <h5><strong>Supply Factors</strong></h5>
+            <ul style="margin-left: 1rem; margin-top: 1rem;">
+              <li>Central bank money printing</li>
+              <li>Government spending</li>
+              <li>Trade deficits (currency outflow)</li>
+              <li>Capital outflows</li>
+              <li>Currency intervention</li>
+            </ul>
+          </div>
+          
+          <div class="demand-box">
+            <h5><strong>Demand Factors</strong></h5>
+            <ul style="margin-left: 1rem; margin-top: 1rem;">
+              <li>Foreign investment inflows</li>
+              <li>Trade surpluses</li>
+              <li>Tourism and remittances</li>
+              <li>Higher interest rates</li>
+              <li>Economic growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Currency Supply Factors</h3>
+      <div class="factor-grid">
+        <div class="factor-card">
+          <h4>Monetary Policy</h4>
+          <p>When central banks increase money supply through quantitative easing or lower interest rates, it increases currency supply and typically weakens the currency.</p>
+          <p><strong>Example:</strong> Fed's QE programs in 2008-2014 increased USD supply, weakening the dollar initially.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Government Spending</h4>
+          <p>Large fiscal deficits require governments to issue more currency or debt, potentially increasing supply and weakening the currency.</p>
+          <p><strong>Example:</strong> Countries with high budget deficits often see currency pressure.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Trade Deficits</h4>
+          <p>When a country imports more than it exports, it creates supply of its currency in foreign exchange markets.</p>
+          <p><strong>Example:</strong> US trade deficit means more USD flowing out to pay for imports.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Capital Outflows</h4>
+          <p>When domestic investors buy foreign assets, they sell their home currency, increasing its supply in forex markets.</p>
+          <p><strong>Example:</strong> Japanese investors buying US bonds sell JPY for USD.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Currency Demand Factors</h3>
+      <div class="factor-grid">
+        <div class="factor-card">
+          <h4>Foreign Investment</h4>
+          <p>Foreign direct investment and portfolio investment create demand for the local currency as investors need it to buy domestic assets.</p>
+          <p><strong>Example:</strong> FII inflows into Indian stock market increase demand for INR.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Export Earnings</h4>
+          <p>Strong exports create demand for a country's currency as foreign buyers need it to pay for goods and services.</p>
+          <p><strong>Example:</strong> Germany's export surplus creates consistent demand for EUR.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Tourism & Remittances</h4>
+          <p>Tourist spending and worker remittances create demand for the destination country's currency.</p>
+          <p><strong>Example:</strong> India receives significant USD inflows from IT services and remittances.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Reserve Currency Status</h4>
+          <p>Central banks and institutions hold reserves in major currencies, creating structural demand.</p>
+          <p><strong>Example:</strong> USD benefits from being the world's primary reserve currency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Real-World Examples</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Supply/Demand Change</th>
+            <th>Currency Impact</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Interest Rate Hike</strong></td>
+            <td>Increased demand (higher yields)</td>
+            <td>Currency strengthens</td>
+            <td>Fed rate hikes strengthen USD</td>
+          </tr>
+          <tr>
+            <td><strong>Quantitative Easing</strong></td>
+            <td>Increased supply (money printing)</td>
+            <td>Currency weakens</td>
+            <td>ECB QE weakened EUR in 2015-2018</td>
+          </tr>
+          <tr>
+            <td><strong>Trade Surplus</strong></td>
+            <td>Increased demand (export earnings)</td>
+            <td>Currency strengthens</td>
+            <td>China's trade surplus supports CNY</td>
+          </tr>
+          <tr>
+            <td><strong>Capital Flight</strong></td>
+            <td>Increased supply (selling pressure)</td>
+            <td>Currency weakens</td>
+            <td>Emerging market crises cause outflows</td>
+          </tr>
+          <tr>
+            <td><strong>Safe Haven Demand</strong></td>
+            <td>Increased demand (risk aversion)</td>
+            <td>Currency strengthens</td>
+            <td>JPY strengthens during global crises</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Market Dynamics</h3>
+      <p>Understanding how supply and demand interact in different market conditions:</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Market Condition</th>
+            <th>Dominant Force</th>
+            <th>Typical Outcome</th>
+            <th>Trading Strategy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Risk-On Environment</strong></td>
+            <td>Demand for higher-yielding currencies</td>
+            <td>Emerging market currencies strengthen</td>
+            <td>Buy high-yield currencies vs safe havens</td>
+          </tr>
+          <tr>
+            <td><strong>Risk-Off Environment</strong></td>
+            <td>Demand for safe haven currencies</td>
+            <td>USD, JPY, CHF strengthen</td>
+            <td>Buy safe havens vs risk currencies</td>
+          </tr>
+          <tr>
+            <td><strong>Economic Growth</strong></td>
+            <td>Increased investment demand</td>
+            <td>Local currency strengthens</td>
+            <td>Buy currencies of growing economies</td>
+          </tr>
+          <tr>
+            <td><strong>Economic Recession</strong></td>
+            <td>Reduced investment, capital flight</td>
+            <td>Local currency weakens</td>
+            <td>Sell currencies of contracting economies</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Practical Applications</h3>
+      <div class="factor-grid">
+        <div class="factor-card">
+          <h4>For Traders</h4>
+          <p>Monitor economic indicators that affect supply and demand. Track capital flows, trade balances, and central bank policies to anticipate currency movements.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>For Travelers</h4>
+          <p>Time currency exchanges based on supply/demand factors. Avoid exchanging during high-demand periods (holidays, economic uncertainty).</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>For Businesses</h4>
+          <p>Hedge currency exposure based on supply/demand cycles. Plan international transactions around favorable exchange rate periods.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>For Investors</h4>
+          <p>Consider currency supply/demand when investing internationally. Factor in potential currency gains/losses from structural changes.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Currency Buddy. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
 </body>
 </html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-

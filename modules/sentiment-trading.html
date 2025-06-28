@@ -2,136 +2,392 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Market Sentiment & Trading - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Market Sentiment & Trading</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/modules/index.html">Learning Hub</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>What is Market Sentiment?</h2>
-      <p>Market sentiment is the overall attitude of traders towards a currency. Positive sentiment leads to buying, negative to selling.</p>
-    </section>
-
-    <section>
-      <h2>Importance in Forex</h2>
-      <p>Sentiment indicators like Commitment of Traders (COT) reports help traders understand market positioning and trends.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Currency Buddy</p>
-  </footer>
-
-  <script src="/script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Market Sentiment & Forex | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Market Sentiment & Trading | CurrencyBuddy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .sentiment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .sentiment-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s ease;
+    }
+    
+    .sentiment-card:hover {
+      border-color: #f5c518;
+      transform: translateY(-2px);
+    }
+    
+    .sentiment-card h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .bullish-card {
+      border-left: 4px solid #2ed573;
+    }
+    
+    .bearish-card {
+      border-left: 4px solid #ff4757;
+    }
+    
+    .neutral-card {
+      border-left: 4px solid #ffa502;
+    }
+    
+    .indicator-box {
+      background-color: #2a2a2a;
+      border: 1px solid #f5c518;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .indicator-box h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .psychology-factors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .psychology-item {
+      background-color: #333;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .psychology-item h5 {
+      color: #f5c518;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Market Sentiment in Forex Trading</h1>
+    <div class="container">
+      <h1>Market Sentiment in Forex Trading</h1>
+      <p>Understanding trader psychology and market emotions</p>
+    </div>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>What is Market Sentiment?</h2>
-      <p>
-        Market sentiment refers to traders' collective attitude towards a currency or market, influenced by news, trends, and global events.
-      </p>
-    </section>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
 
-    <section>
-      <h2>Examples of Sentiment Impact</h2>
+    <div class="content-section">
+      <h2>What is Market Sentiment?</h2>
+      <p>Market sentiment refers to traders' collective attitude towards a currency or market, influenced by news, trends, and global events. It represents the overall feeling of market participants - whether they're optimistic (bullish) or pessimistic (bearish) about a currency's future direction.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>Types of Market Sentiment</h3>
+      <div class="sentiment-grid">
+        <div class="sentiment-card bullish-card">
+          <h4>Bullish Sentiment</h4>
+          <p><strong>Characteristics:</strong></p>
+          <ul style="margin-left: 1rem;">
+            <li>Optimism about currency's future</li>
+            <li>Increased buying pressure</li>
+            <li>Risk-taking behavior</li>
+            <li>Positive news interpretation</li>
+          </ul>
+          <p><strong>Effect:</strong> Currency strengthens as demand increases</p>
+        </div>
+        
+        <div class="sentiment-card bearish-card">
+          <h4>Bearish Sentiment</h4>
+          <p><strong>Characteristics:</strong></p>
+          <ul style="margin-left: 1rem;">
+            <li>Pessimism about currency's future</li>
+            <li>Increased selling pressure</li>
+            <li>Risk-averse behavior</li>
+            <li>Negative news interpretation</li>
+          </ul>
+          <p><strong>Effect:</strong> Currency weakens as selling increases</p>
+        </div>
+        
+        <div class="sentiment-card neutral-card">
+          <h4>Neutral Sentiment</h4>
+          <p><strong>Characteristics:</strong></p>
+          <ul style="margin-left: 1rem;">
+            <li>Balanced market views</li>
+            <li>Range-bound trading</li>
+            <li>Waiting for catalysts</li>
+            <li>Mixed news interpretation</li>
+          </ul>
+          <p><strong>Effect:</strong> Currency trades in sideways patterns</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Sentiment Indicators</h3>
+      <p>Traders use various tools to gauge market sentiment and position themselves accordingly:</p>
+      
       <table>
-        <tr>
-          <th>Sentiment</th>
-          <th>Effect on Currency</th>
-        </tr>
-        <tr>
-          <td>Bullish (Positive)</td>
-          <td>Increases buying, strengthening the currency.</td>
-        </tr>
-        <tr>
-          <td>Bearish (Negative)</td>
-          <td>Increases selling, weakening the currency.</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Indicator</th>
+            <th>What It Measures</th>
+            <th>How to Interpret</th>
+            <th>Reliability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Commitment of Traders (COT)</strong></td>
+            <td>Positioning of large speculators and commercials</td>
+            <td>Extreme positions often signal reversals</td>
+            <td>High (weekly data)</td>
+          </tr>
+          <tr>
+            <td><strong>VIX (Fear Index)</strong></td>
+            <td>Market volatility expectations</td>
+            <td>High VIX = fear, low VIX = complacency</td>
+            <td>High (real-time)</td>
+          </tr>
+          <tr>
+            <td><strong>Risk-On/Risk-Off</strong></td>
+            <td>Appetite for risky vs safe assets</td>
+            <td>Risk-on favors growth currencies, risk-off favors safe havens</td>
+            <td>Medium (subjective)</td>
+          </tr>
+          <tr>
+            <td><strong>News Sentiment Analysis</strong></td>
+            <td>Tone of financial news and social media</td>
+            <td>Positive news = bullish, negative news = bearish</td>
+            <td>Medium (can be manipulated)</td>
+          </tr>
+          <tr>
+            <td><strong>Positioning Data</strong></td>
+            <td>How traders are positioned in the market</td>
+            <td>Crowded trades often reverse</td>
+            <td>High (from brokers/exchanges)</td>
+          </tr>
+        </tbody>
       </table>
-    </section>
+    </div>
 
-    <section>
-      <h2>Speculative Trading</h2>
-      <p>
-        Forex traders often speculate based on expected economic data or political outcomes, adding to market volatility.
-      </p>
-    </section>
+    <div class="content-section">
+      <h3>Psychological Factors Affecting Sentiment</h3>
+      <div class="indicator-box">
+        <h4>Common Psychological Biases in Forex Trading</h4>
+        <div class="psychology-factors">
+          <div class="psychology-item">
+            <h5>Fear of Missing Out (FOMO)</h5>
+            <p>Drives traders to chase trends, often buying at tops</p>
+          </div>
+          
+          <div class="psychology-item">
+            <h5>Herd Mentality</h5>
+            <p>Following the crowd, amplifying market moves</p>
+          </div>
+          
+          <div class="psychology-item">
+            <h5>Confirmation Bias</h5>
+            <p>Seeking information that confirms existing beliefs</p>
+          </div>
+          
+          <div class="psychology-item">
+            <h5>Loss Aversion</h5>
+            <p>Fear of losses outweighs potential for gains</p>
+          </div>
+          
+          <div class="psychology-item">
+            <h5>Overconfidence</h5>
+            <p>Excessive confidence after winning trades</p>
+          </div>
+          
+          <div class="psychology-item">
+            <h5>Panic Selling</h5>
+            <p>Emotional selling during market stress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Sentiment-Driven Market Scenarios</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Sentiment Driver</th>
+            <th>Market Reaction</th>
+            <th>Currency Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Economic Data Beat</strong></td>
+            <td>Positive surprise in key indicators</td>
+            <td>Immediate bullish sentiment</td>
+            <td>Currency strengthens rapidly</td>
+          </tr>
+          <tr>
+            <td><strong>Geopolitical Crisis</strong></td>
+            <td>Fear and uncertainty</td>
+            <td>Flight to safe havens</td>
+            <td>USD, JPY, CHF strengthen</td>
+          </tr>
+          <tr>
+            <td><strong>Central Bank Dovish</strong></td>
+            <td>Disappointment in policy stance</td>
+            <td>Bearish sentiment develops</td>
+            <td>Currency weakens on rate cut expectations</td>
+          </tr>
+          <tr>
+            <td><strong>Risk-On Rally</strong></td>
+            <td>Optimism about global growth</td>
+            <td>Appetite for higher-yielding assets</td>
+            <td>Emerging market currencies strengthen</td>
+          </tr>
+          <tr>
+            <td><strong>Technical Breakout</strong></td>
+            <td>Chart patterns trigger momentum</td>
+            <td>Algorithmic and trend following</td>
+            <td>Amplified moves in breakout direction</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Speculative Trading Impact</h3>
+      <p>Large-scale speculation can drive currency movements independent of economic fundamentals:</p>
+      
+      <div class="sentiment-grid">
+        <div class="sentiment-card">
+          <h4>Hedge Fund Activity</h4>
+          <p>Large hedge funds can move markets through massive position sizes. Their trades often become self-fulfilling prophecies as other traders follow.</p>
+          <p><strong>Example:</strong> George Soros breaking the Bank of England in 1992</p>
+        </div>
+        
+        <div class="sentiment-card">
+          <h4>Algorithmic Trading</h4>
+          <p>Computer algorithms react to news and sentiment indicators faster than humans, amplifying market moves and creating feedback loops.</p>
+          <p><strong>Impact:</strong> Increased volatility and faster price discovery</p>
+        </div>
+        
+        <div class="sentiment-card">
+          <h4>Social Media Influence</h4>
+          <p>Social media sentiment can influence retail trader behavior, especially in major currency pairs and during significant events.</p>
+          <p><strong>Example:</strong> Twitter sentiment affecting crypto and forex markets</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Trading Sentiment Strategies</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>Approach</th>
+            <th>Best Used When</th>
+            <th>Risk Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Contrarian Trading</strong></td>
+            <td>Trade against extreme sentiment</td>
+            <td>Sentiment reaches extreme levels</td>
+            <td>High (timing critical)</td>
+          </tr>
+          <tr>
+            <td><strong>Momentum Trading</strong></td>
+            <td>Follow strong sentiment trends</td>
+            <td>Clear sentiment direction established</td>
+            <td>Medium (trend following)</td>
+          </tr>
+          <tr>
+            <td><strong>News Trading</strong></td>
+            <td>Trade immediate sentiment reactions</td>
+            <td>Major news releases or events</td>
+            <td>High (volatile conditions)</td>
+          </tr>
+          <tr>
+            <td><strong>Sentiment Confirmation</strong></td>
+            <td>Use sentiment to confirm technical analysis</td>
+            <td>Technical signals align with sentiment</td>
+            <td>Medium (multiple confirmations)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Practical Tips for Sentiment Analysis</h3>
+      <div class="sentiment-grid">
+        <div class="sentiment-card">
+          <h4>Monitor Multiple Sources</h4>
+          <p>Don't rely on single sentiment indicators. Combine COT data, news sentiment, positioning reports, and market behavior for comprehensive analysis.</p>
+        </div>
+        
+        <div class="sentiment-card">
+          <h4>Watch for Extremes</h4>
+          <p>Extreme sentiment levels often precede reversals. When everyone is bullish or bearish, consider contrarian positions.</p>
+        </div>
+        
+        <div class="sentiment-card">
+          <h4>Consider Time Frames</h4>
+          <p>Sentiment can differ across time frames. Short-term sentiment might be bearish while long-term remains bullish.</p>
+        </div>
+        
+        <div class="sentiment-card">
+          <h4>Combine with Fundamentals</h4>
+          <p>Sentiment works best when combined with fundamental analysis. Strong fundamentals can sustain sentiment-driven moves.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
 </body>
 </html>
-<link rel="stylesheet" href="../style.css">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest Rates and Inflation</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Market Sentiment | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header>
-    <h1>Market Sentiment & Trading</h1>
-  </header>
-
-  <main>
-    <p>Trader psychology and market sentiment influence currency rates. Positive sentiment can drive up demand for a currency even without fundamental changes, while negative news or fear can cause depreciation.</p>
-
-    <table>
-      <tr>
-        <th>Sentiment Type</th>
-        <th>Effect</th>
-      </tr>
-      <tr>
-        <td>Risk-On</td>
-        <td>Investors buy riskier currencies, strengthening them</td>
-      </tr>
-      <tr>
-        <td>Risk-Off</td>
-        <td>Investors shift to safe havens, weakening risk currencies</td>
-      </tr>
-    </table>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 CurrencyBuddy</p>
-  </footer>
-</body>
-</html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>

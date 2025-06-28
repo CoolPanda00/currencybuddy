@@ -2,98 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Factors Affecting Forex - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Factors Affecting Forex</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/modules/index.html">Learning Hub</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Overview</h2>
-      <p>The forex market is driven by various factors, including economic data, geopolitical events, and market sentiment. Understanding these helps traders make informed decisions.</p>
-    </section>
-
-    <section>
-      <h2>Main Factors</h2>
-      <ul>
-        <li>Interest Rates</li>
-        <li>Inflation</li>
-        <li>Economic Growth</li>
-        <li>Political Stability</li>
-        <li>Market Speculation</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Currency Buddy</p>
-  </footer>
-
-  <script src="/script.js"></script>
-</body>
-</html>
-<link rel="stylesheet" href="../style.css">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest Rates and Inflation</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Factors Affecting Forex | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .factor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .factor-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s ease;
+    }
+    
+    .factor-card:hover {
+      border-color: #f5c518;
+      transform: translateY(-2px);
+    }
+    
+    .factor-card h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Factors Affecting Forex Rates</h1>
+    <div class="container">
+      <h1>Factors Affecting Forex Rates</h1>
+      <p>The key drivers of currency market movements</p>
+    </div>
   </header>
 
-  <main>
-    <p>Multiple economic and political factors influence forex rates, causing them to fluctuate constantly based on market perception and data releases.</p>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
 
-    <table>
-      <tr>
-        <th>Factor</th>
-        <th>Impact</th>
-      </tr>
-      <tr>
-        <td>Interest Rates</td>
-        <td>Higher rates attract investment, strengthening the currency</td>
-      </tr>
-      <tr>
-        <td>Inflation</td>
-        <td>High inflation generally devalues currency due to reduced purchasing power</td>
-      </tr>
-      <tr>
-        <td>Political Stability</td>
-        <td>Stable governments attract foreign capital, appreciating currency value</td>
-      </tr>
-      <tr>
-        <td>Trade Balances</td>
-        <td>Surplus boosts currency demand; deficit weakens it</td>
-      </tr>
-    </table>
+    <div class="content-section">
+      <h2>Overview</h2>
+      <p>The forex market is driven by various factors, including economic data, geopolitical events, and market sentiment. Understanding these helps traders make informed decisions and travelers plan better currency exchanges.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>Economic Factors</h3>
+      <div class="factor-grid">
+        <div class="factor-card">
+          <h4>Interest Rates</h4>
+          <p>Central bank interest rates are the primary driver of currency values. Higher rates attract foreign investment, increasing demand for the currency.</p>
+          <p><strong>Impact:</strong> Immediate and significant effect on currency pairs</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Inflation Rates</h4>
+          <p>Countries with lower inflation rates see their currency appreciate as purchasing power increases relative to other currencies.</p>
+          <p><strong>Impact:</strong> Long-term currency strength or weakness</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Economic Growth (GDP)</h4>
+          <p>Strong economic growth attracts foreign investment and increases confidence in the currency.</p>
+          <p><strong>Impact:</strong> Sustained currency appreciation during growth periods</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Employment Data</h4>
+          <p>Low unemployment indicates a healthy economy, supporting currency strength.</p>
+          <p><strong>Impact:</strong> Monthly employment reports can cause significant volatility</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Political & Social Factors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Impact on Currency</th>
+            <th>Time Frame</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Political Stability</strong></td>
+            <td>Stable governments attract foreign capital, appreciating currency value</td>
+            <td>Long-term</td>
+          </tr>
+          <tr>
+            <td><strong>Elections</strong></td>
+            <td>Uncertainty before elections can weaken currency; results can cause sharp moves</td>
+            <td>Short to medium-term</td>
+          </tr>
+          <tr>
+            <td><strong>Government Debt</strong></td>
+            <td>High debt levels can weaken currency due to default risk concerns</td>
+            <td>Long-term</td>
+          </tr>
+          <tr>
+            <td><strong>Trade Policies</strong></td>
+            <td>Protectionist policies can weaken currency; free trade agreements strengthen it</td>
+            <td>Medium to long-term</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Market Factors</h3>
+      <div class="factor-grid">
+        <div class="factor-card">
+          <h4>Market Speculation</h4>
+          <p>Large-scale speculation by hedge funds and institutional investors can drive currency movements independent of fundamentals.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Risk Sentiment</h4>
+          <p>During times of uncertainty, investors move to "safe haven" currencies like USD, CHF, and JPY.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Commodity Prices</h4>
+          <p>Countries that export commodities see their currencies strengthen when commodity prices rise.</p>
+        </div>
+        
+        <div class="factor-card">
+          <h4>Capital Flows</h4>
+          <p>Foreign direct investment and portfolio investment flows directly impact currency demand.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 CurrencyBuddy</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
 </body>
 </html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>

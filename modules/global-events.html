@@ -2,137 +2,336 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Global Events Impact - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Events & Forex | CurrencyBuddy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .event-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s ease;
+    }
+    
+    .event-card:hover {
+      border-color: #f5c518;
+      transform: translateY(-2px);
+    }
+    
+    .event-card h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .case-study {
+      background-color: #2a2a2a;
+      border: 1px solid #f5c518;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .case-study h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .impact-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #333;
+      border-radius: 5px;
+    }
+    
+    .timeline-date {
+      background-color: #f5c518;
+      color: #121212;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      min-width: 100px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Global Events Impact</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/modules/index.html">Learning Hub</a>
-    </nav>
+    <div class="container">
+      <h1>How Global Events Affect Exchange Rates</h1>
+      <p>Understanding geopolitical and economic event impacts on currency markets</p>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
+
+    <div class="content-section">
       <h2>Role of Global Events</h2>
-      <p>Events like elections, wars, natural disasters, and trade agreements cause currency volatility as they affect economic stability and investor confidence.</p>
-    </section>
+      <p>Events like elections, wars, natural disasters, and trade agreements cause currency volatility as they affect economic stability and investor confidence. Understanding these impacts helps traders and travelers make better decisions.</p>
+    </div>
 
-    <section>
-      <h2>Examples</h2>
-      <ul>
-        <li>Brexit affecting GBP</li>
-        <li>US-China trade tensions impacting USD & CNY</li>
-        <li>COVID-19 affecting global currencies</li>
-      </ul>
-    </section>
-  </main>
+    <div class="content-section">
+      <h3>Types of Global Events</h3>
+      <div class="event-grid">
+        <div class="event-card">
+          <h4>Political Events</h4>
+          <ul style="margin-left: 1rem;">
+            <li>Elections and government changes</li>
+            <li>Policy announcements</li>
+            <li>Political instability</li>
+            <li>Referendum votes</li>
+          </ul>
+          <p><strong>Impact:</strong> Can cause immediate volatility and long-term trend changes</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>Geopolitical Tensions</h4>
+          <ul style="margin-left: 1rem;">
+            <li>Wars and conflicts</li>
+            <li>Trade disputes</li>
+            <li>Sanctions</li>
+            <li>Diplomatic crises</li>
+          </ul>
+          <p><strong>Impact:</strong> Flight to safe-haven currencies, increased volatility</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>Natural Disasters</h4>
+          <ul style="margin-left: 1rem;">
+            <li>Earthquakes and tsunamis</li>
+            <li>Hurricanes and floods</li>
+            <li>Pandemics</li>
+            <li>Climate events</li>
+          </ul>
+          <p><strong>Impact:</strong> Economic disruption, currency weakness in affected regions</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>Economic Crises</h4>
+          <ul style="margin-left: 1rem;">
+            <li>Banking crises</li>
+            <li>Debt defaults</li>
+            <li>Market crashes</li>
+            <li>Recession fears</li>
+          </ul>
+          <p><strong>Impact:</strong> Massive capital flows, currency devaluations</p>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2025 Currency Buddy</p>
-  </footer>
+    <div class="content-section">
+      <h3>Historical Case Studies</h3>
+      
+      <div class="case-study">
+        <h4>Brexit (2016-2020)</h4>
+        <p>The UK's decision to leave the European Union created years of uncertainty for GBP.</p>
+        
+        <div class="impact-timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Jun 2016</div>
+            <div>Brexit referendum result: GBP falls 10% in a single day</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017-2019</div>
+            <div>Ongoing negotiations create persistent GBP volatility</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Jan 2020</div>
+            <div>Brexit deal finalized: GBP recovers some losses</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="case-study">
+        <h4>COVID-19 Pandemic (2020-2022)</h4>
+        <p>Global pandemic caused unprecedented currency market disruption.</p>
+        
+        <table style="margin-top: 1rem;">
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Initial Impact</th>
+              <th>Recovery Pattern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>USD</strong></td>
+              <td>Strengthened as safe haven</td>
+              <td>Weakened as Fed cut rates to zero</td>
+            </tr>
+            <tr>
+              <td><strong>EUR</strong></td>
+              <td>Weakened due to Italy/Spain concerns</td>
+              <td>Recovered with EU recovery fund</td>
+            </tr>
+            <tr>
+              <td><strong>JPY</strong></td>
+              <td>Strengthened as safe haven</td>
+              <td>Remained strong throughout crisis</td>
+            </tr>
+            <tr>
+              <td><strong>Emerging Markets</strong></td>
+              <td>Massive outflows, sharp devaluations</td>
+              <td>Gradual recovery with vaccine rollout</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  <script src="/script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Events Impact on Forex | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header>
-    <h1>How Global Events Affect Exchange Rates</h1>
-  </header>
-
-  <main class="content">
-    <section>
-      <h2>Political Events & Instability</h2>
-      <p>
-        Elections, political instability, and policy changes create uncertainty, leading to volatility in currency values.
-      </p>
-
+    <div class="content-section">
+      <h3>Safe Haven Currencies</h3>
+      <p>During global uncertainty, investors flock to "safe haven" currencies perceived as stable stores of value.</p>
+      
       <table>
-        <tr>
-          <th>Event</th>
-          <th>Impact Example</th>
-        </tr>
-        <tr>
-          <td>Brexit Vote</td>
-          <td>GBP fell sharply against major currencies due to economic uncertainty.</td>
-        </tr>
-        <tr>
-          <td>US Elections</td>
-          <td>USD experiences volatility around policy change expectations.</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Why It's a Safe Haven</th>
+            <th>Typical Behavior During Crisis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>US Dollar (USD)</strong></td>
+            <td>World's reserve currency, deep markets, US economic strength</td>
+            <td>Strengthens significantly during global crises</td>
+          </tr>
+          <tr>
+            <td><strong>Japanese Yen (JPY)</strong></td>
+            <td>Japan's current account surplus, low inflation, stable politics</td>
+            <td>Appreciates during risk-off periods</td>
+          </tr>
+          <tr>
+            <td><strong>Swiss Franc (CHF)</strong></td>
+            <td>Switzerland's neutrality, banking secrecy, economic stability</td>
+            <td>Strengthens during European crises</td>
+          </tr>
+          <tr>
+            <td><strong>Gold</strong></td>
+            <td>Traditional store of value, inflation hedge</td>
+            <td>Price rises during currency debasement fears</td>
+          </tr>
+        </tbody>
       </table>
-    </section>
+    </div>
 
-    <section>
-      <h2>Natural Disasters & Pandemics</h2>
-      <p>
-        Events like earthquakes, tsunamis, or pandemics slow down economies and weaken currencies due to reduced productivity and growth.
-      </p>
-    </section>
+    <div class="content-section">
+      <h3>Recent Global Events Impact</h3>
+      <div class="event-grid">
+        <div class="event-card">
+          <h4>Russia-Ukraine Conflict (2022-Present)</h4>
+          <p><strong>Impact:</strong> EUR weakened due to energy concerns, USD strengthened as safe haven, commodity currencies gained on higher prices.</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>US-China Trade War (2018-2020)</h4>
+          <p><strong>Impact:</strong> CNY weakened significantly, emerging market currencies under pressure, safe havens strengthened.</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>Middle East Tensions</h4>
+          <p><strong>Impact:</strong> Oil price spikes strengthen commodity currencies (CAD, NOK), weaken oil-importing countries' currencies.</p>
+        </div>
+        
+        <div class="event-card">
+          <h4>Central Bank Policy Divergence</h4>
+          <p><strong>Impact:</strong> When major central banks pursue different policies, it creates sustained currency trends.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>How to Trade Global Events</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>When to Use</th>
+            <th>Risk Level</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Safe Haven Buying</strong></td>
+            <td>During geopolitical tensions</td>
+            <td>Medium</td>
+            <td>Buy USD/JPY during Middle East conflicts</td>
+          </tr>
+          <tr>
+            <td><strong>Event-Driven Trading</strong></td>
+            <td>Around known events (elections, referendums)</td>
+            <td>High</td>
+            <td>GBP volatility around Brexit votes</td>
+          </tr>
+          <tr>
+            <td><strong>Correlation Trading</strong></td>
+            <td>When events affect multiple currencies</td>
+            <td>Medium</td>
+            <td>Commodity currencies during oil crises</td>
+          </tr>
+          <tr>
+            <td><strong>Long-term Positioning</strong></td>
+            <td>Structural changes from major events</td>
+            <td>Low-Medium</td>
+            <td>USD strength from Fed policy normalization</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
 </body>
 </html>
-<link rel="stylesheet" href="../style.css">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest Rates and Inflation</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Events | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header>
-    <h1>Global Events & Forex</h1>
-  </header>
-
-  <main>
-    <p>Global events like geopolitical tensions, pandemics, wars, and major trade agreements significantly influence forex markets by creating uncertainty or confidence, affecting currency demand.</p>
-
-    <table>
-      <tr>
-        <th>Event</th>
-        <th>Impact</th>
-      </tr>
-      <tr>
-        <td>War</td>
-        <td>Decreases currency value due to instability</td>
-      </tr>
-      <tr>
-        <td>Trade Agreement</td>
-        <td>Strengthens currency by boosting economic prospects</td>
-      </tr>
-    </table>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 CurrencyBuddy</p>
-  </footer>
-</body>
-</html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>

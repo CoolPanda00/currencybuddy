@@ -2,47 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How Forex Works - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Forex Works | CurrencyBuddy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .info-box {
+      background-color: #2a2a2a;
+      border: 1px solid #f5c518;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .info-box h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .trading-hours {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .session-card {
+      background-color: #2a2a2a;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .session-card h5 {
+      color: #f5c518;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>How Forex Works</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/modules/index.html">Learning Hub</a>
-    </nav>
+    <div class="container">
+      <h1>How Forex Works</h1>
+      <p>Understanding the mechanics of the foreign exchange market</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>Forex trading involves buying one currency while selling another simultaneously. This happens in currency pairs traded on the global forex market 24/5.</p>
-    </section>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
 
-    <section>
-      <h2>How Trades Happen</h2>
-      <p>Banks, financial institutions, corporations, and individual traders exchange currencies for international trade, hedging, speculation, and travel purposes.</p>
-    </section>
+    <div class="content-section">
+      <h2>Introduction to Forex</h2>
+      <p>Forex trading involves buying one currency while selling another simultaneously. This happens in currency pairs traded on the global forex market 24 hours a day, 5 days a week.</p>
+      
+      <div class="info-box">
+        <h4>Did You Know?</h4>
+        <p>The forex market is the largest financial market in the world, with over $7.5 trillion traded daily. That's more than all stock markets combined!</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Market Participants</h3>
+      <p>The forex market consists of various participants, each with different motivations:</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Participant</th>
+            <th>Purpose</th>
+            <th>Market Share</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Central Banks</strong></td>
+            <td>Monetary policy implementation, currency intervention</td>
+            <td>5-10%</td>
+          </tr>
+          <tr>
+            <td><strong>Commercial Banks</strong></td>
+            <td>Client services, proprietary trading, market making</td>
+            <td>40-50%</td>
+          </tr>
+          <tr>
+            <td><strong>Corporations</strong></td>
+            <td>International trade, hedging currency risk</td>
+            <td>10-15%</td>
+          </tr>
+          <tr>
+            <td><strong>Hedge Funds</strong></td>
+            <td>Speculation, arbitrage opportunities</td>
+            <td>10-15%</td>
+          </tr>
+          <tr>
+            <td><strong>Retail Traders</strong></td>
+            <td>Speculation, investment</td>
+            <td>3-5%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h3>Trading Sessions</h3>
+      <p>The forex market operates 24/5 across four major trading sessions:</p>
+      
+      <div class="trading-hours">
+        <div class="session-card">
+          <h5>Sydney Session</h5>
+          <p>10:00 PM - 7:00 AM GMT</p>
+          <p>AUD, NZD pairs active</p>
+        </div>
+        
+        <div class="session-card">
+          <h5>Tokyo Session</h5>
+          <p>12:00 AM - 9:00 AM GMT</p>
+          <p>JPY pairs most active</p>
+        </div>
+        
+        <div class="session-card">
+          <h5>London Session</h5>
+          <p>8:00 AM - 5:00 PM GMT</p>
+          <p>EUR, GBP pairs peak activity</p>
+        </div>
+        
+        <div class="session-card">
+          <h5>New York Session</h5>
+          <p>1:00 PM - 10:00 PM GMT</p>
+          <p>USD pairs highest volume</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>How Trades Are Executed</h3>
+      <p>Modern forex trading happens electronically through various platforms:</p>
+      
+      <ul style="margin-left: 2rem; margin-top: 1rem;">
+        <li><strong>Interbank Market:</strong> Large banks trade directly with each other</li>
+        <li><strong>Electronic Communication Networks (ECNs):</strong> Automated matching of buy/sell orders</li>
+        <li><strong>Retail Brokers:</strong> Provide access to individual traders through online platforms</li>
+        <li><strong>Market Makers:</strong> Provide liquidity by always being ready to buy or sell</li>
+      </ul>
+      
+      <div class="info-box">
+        <h4>Trade Execution Process</h4>
+        <ol style="margin-left: 2rem;">
+          <li>Trader places order through broker platform</li>
+          <li>Broker routes order to liquidity providers</li>
+          <li>Order is matched with counterparty</li>
+          <li>Trade is executed and confirmed</li>
+          <li>Settlement occurs (usually T+2 days)</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Key Forex Concepts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Term</th>
+            <th>Definition</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pip</strong></td>
+            <td>Smallest price movement, usually 0.0001</td>
+            <td>EUR/USD moves from 1.1000 to 1.1001 = 1 pip</td>
+          </tr>
+          <tr>
+            <td><strong>Spread</strong></td>
+            <td>Difference between bid and ask price</td>
+            <td>EUR/USD Bid: 1.1000, Ask: 1.1002 = 2 pip spread</td>
+          </tr>
+          <tr>
+            <td><strong>Leverage</strong></td>
+            <td>Borrowing funds to increase position size</td>
+            <td>1:100 leverage means $1,000 can control $100,000</td>
+          </tr>
+          <tr>
+            <td><strong>Margin</strong></td>
+            <td>Required deposit to open leveraged position</td>
+            <td>2% margin = $2,000 needed for $100,000 position</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Currency Buddy</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
-
-  <script src="/script.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="../style.css">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest Rates and Inflation</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>

@@ -2,154 +2,307 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interest Rates & Inflation - Currency Buddy</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Interest Rates & Inflation</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/modules/index.html">Learning Hub</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Relationship Between Interest Rates and Inflation</h2>
-      <p>Central banks adjust interest rates to control inflation. Higher rates attract foreign investment, strengthening the currency.</p>
-    </section>
-
-    <section>
-      <h2>Impact on Forex</h2>
-      <p>Traders monitor central bank announcements for rate changes as these directly affect currency demand and value.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Currency Buddy</p>
-  </footer>
-
-  <script src="/script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Interest Rates & Inflation | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .content-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid #f5c518;
+    }
+    
+    .back-nav {
+      margin-bottom: 2rem;
+    }
+    
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .back-nav a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .concept-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s ease;
+    }
+    
+    .concept-card:hover {
+      border-color: #f5c518;
+      transform: translateY(-2px);
+    }
+    
+    .concept-card h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    
+    .rate-comparison {
+      background-color: #2a2a2a;
+      border: 1px solid #f5c518;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .rate-comparison h4 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Interest Rates & Inflation Impact on Forex</h1>
+    <div class="container">
+      <h1>Interest Rates & Inflation Impact on Forex</h1>
+      <p>Understanding the relationship between monetary policy and currency values</p>
+    </div>
   </header>
 
-  <main class="content">
-    <section>
+  <main class="container">
+    <div class="back-nav">
+      <a href="index.html">← Back to Learning Hub</a>
+    </div>
+
+    <div class="content-section">
       <h2>Understanding Interest Rates</h2>
-      <p>
-        Central banks set interest rates to control economic growth. Higher interest rates attract foreign capital, increasing demand for a currency, while lower rates tend to reduce its value.
-      </p>
+      <p>Central banks set interest rates to control economic growth and inflation. Higher interest rates attract foreign capital, increasing demand for a currency, while lower rates tend to reduce its value.</p>
+      
+      <div class="concept-grid">
+        <div class="concept-card">
+          <h4>How Interest Rates Affect Currency</h4>
+          <ul style="margin-left: 1rem;">
+            <li><strong>Higher Rates:</strong> Attract foreign investment</li>
+            <li><strong>Capital Inflow:</strong> Increases currency demand</li>
+            <li><strong>Currency Appreciation:</strong> Value rises relative to others</li>
+            <li><strong>Carry Trade:</strong> Investors borrow low-rate currencies to invest in high-rate ones</li>
+          </ul>
+        </div>
+        
+        <div class="concept-card">
+          <h4>Central Bank Tools</h4>
+          <ul style="margin-left: 1rem;">
+            <li><strong>Policy Rate:</strong> Benchmark interest rate</li>
+            <li><strong>Forward Guidance:</strong> Communication about future policy</li>
+            <li><strong>Quantitative Easing:</strong> Bond buying programs</li>
+            <li><strong>Reserve Requirements:</strong> Bank lending controls</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div class="content-section">
+      <h3>Current Interest Rates (2025)</h3>
+      <div class="rate-comparison">
+        <h4>Major Central Bank Rates</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Country/Region</th>
+              <th>Central Bank</th>
+              <th>Current Rate (%)</th>
+              <th>Currency Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>United States</strong></td>
+              <td>Federal Reserve (Fed)</td>
+              <td>5.25 - 5.50</td>
+              <td>Strengthens USD due to higher returns</td>
+            </tr>
+            <tr>
+              <td><strong>India</strong></td>
+              <td>Reserve Bank of India (RBI)</td>
+              <td>6.50</td>
+              <td>Attracts capital inflow, supports INR</td>
+            </tr>
+            <tr>
+              <td><strong>Eurozone</strong></td>
+              <td>European Central Bank (ECB)</td>
+              <td>4.50</td>
+              <td>Moderate support for EUR</td>
+            </tr>
+            <tr>
+              <td><strong>United Kingdom</strong></td>
+              <td>Bank of England (BoE)</td>
+              <td>5.25</td>
+              <td>Supports GBP strength</td>
+            </tr>
+            <tr>
+              <td><strong>Japan</strong></td>
+              <td>Bank of Japan (BoJ)</td>
+              <td>0.25</td>
+              <td>Keeps JPY relatively weak</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Understanding Inflation</h3>
+      <p>Inflation reflects the rise in prices over time. Currencies with lower inflation rates tend to appreciate as purchasing power remains stable, while higher inflation weakens currency value.</p>
+      
+      <div class="concept-grid">
+        <div class="concept-card">
+          <h4>Types of Inflation</h4>
+          <ul style="margin-left: 1rem;">
+            <li><strong>Core Inflation:</strong> Excludes food and energy prices</li>
+            <li><strong>Headline Inflation:</strong> Includes all price changes</li>
+            <li><strong>Producer Inflation:</strong> Wholesale price changes</li>
+            <li><strong>Wage Inflation:</strong> Rising labor costs</li>
+          </ul>
+        </div>
+        
+        <div class="concept-card">
+          <h4>Inflation's Currency Impact</h4>
+          <ul style="margin-left: 1rem;">
+            <li><strong>Low Inflation:</strong> Preserves purchasing power</li>
+            <li><strong>Moderate Inflation:</strong> Sign of healthy economy</li>
+            <li><strong>High Inflation:</strong> Erodes currency value</li>
+            <li><strong>Deflation:</strong> Can signal economic weakness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Current Inflation Rates (2025)</h3>
       <table>
-        <tr>
-          <th>Country</th>
-          <th>Current Interest Rate (%)</th>
-          <th>Impact</th>
-        </tr>
-        <tr>
-          <td>USA</td>
-          <td>5.25</td>
-          <td>Strengthens USD due to higher returns for investors.</td>
-        </tr>
-        <tr>
-          <td>India</td>
-          <td>6.5</td>
-          <td>Attracts capital inflow, supporting INR value.</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Inflation Rate (%)</th>
+            <th>Central Bank Target (%)</th>
+            <th>Currency Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>United States</strong></td>
+            <td>3.2</td>
+            <td>2.0</td>
+            <td>Above target, may pressure Fed to maintain high rates</td>
+          </tr>
+          <tr>
+            <td><strong>India</strong></td>
+            <td>4.8</td>
+            <td>4.0 (±2%)</td>
+            <td>Within tolerance band, supports INR stability</td>
+          </tr>
+          <tr>
+            <td><strong>Eurozone</strong></td>
+            <td>2.4</td>
+            <td>2.0</td>
+            <td>Slightly above target, ECB monitoring closely</td>
+          </tr>
+          <tr>
+            <td><strong>Japan</strong></td>
+            <td>1.8</td>
+            <td>2.0</td>
+            <td>Below target, BoJ maintaining accommodative policy</td>
+          </tr>
+          <tr>
+            <td><strong>United Kingdom</strong></td>
+            <td>2.9</td>
+            <td>2.0</td>
+            <td>Above target, BoE balancing growth vs inflation</td>
+          </tr>
+        </tbody>
       </table>
-    </section>
+    </div>
 
-    <section>
-      <h2>Understanding Inflation</h2>
-      <p>
-        Inflation reflects the rise in prices over time. Currencies with lower inflation rates tend to appreciate as purchasing power remains stable, while higher inflation weakens currency value.
-      </p>
+    <div class="content-section">
+      <h3>Interest Rate Differentials</h3>
+      <p>The difference between interest rates of two countries is a key driver of currency exchange rates. Investors seek higher yields, creating demand for higher-yielding currencies.</p>
+      
+      <div class="rate-comparison">
+        <h4>Popular Carry Trade Examples</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Currency Pair</th>
+              <th>Rate Differential</th>
+              <th>Strategy</th>
+              <th>Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>USD/JPY</strong></td>
+              <td>~5.00% (USD higher)</td>
+              <td>Borrow JPY, invest in USD</td>
+              <td>Currency depreciation risk</td>
+            </tr>
+            <tr>
+              <td><strong>AUD/JPY</strong></td>
+              <td>~4.00% (AUD higher)</td>
+              <td>Borrow JPY, invest in AUD</td>
+              <td>Commodity price sensitivity</td>
+            </tr>
+            <tr>
+              <td><strong>NZD/JPY</strong></td>
+              <td>~5.25% (NZD higher)</td>
+              <td>Borrow JPY, invest in NZD</td>
+              <td>High volatility risk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-      <table>
-        <tr>
-          <th>Country</th>
-          <th>Inflation Rate (%)</th>
-          <th>Impact</th>
-        </tr>
-        <tr>
-          <td>Japan</td>
-          <td>1.2</td>
-          <td>Stable, supporting Yen strength.</td>
-        </tr>
-        <tr>
-          <td>Turkey</td>
-          <td>45.0</td>
-          <td>High inflation devalues the Lira.</td>
-        </tr>
-      </table>
-    </section>
+    <div class="content-section">
+      <h3>Trading Interest Rate Events</h3>
+      <div class="concept-grid">
+        <div class="concept-card">
+          <h4>Before Rate Decisions</h4>
+          <p>Markets price in expectations. Check central bank communications and economic data for clues about future policy.</p>
+        </div>
+        
+        <div class="concept-card">
+          <h4>During Announcements</h4>
+          <p>High volatility expected. Rate changes, forward guidance, and press conferences all impact currency values.</p>
+        </div>
+        
+        <div class="concept-card">
+          <h4>After Decisions</h4>
+          <p>Markets may reverse initial reactions as traders analyze the full implications of policy changes.</p>
+        </div>
+        
+        <div class="concept-card">
+          <h4>Long-term Trends</h4>
+          <p>Rate cycles (tightening vs easing) create sustained currency trends lasting months or years.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    <div class="container">
+      <p>&copy; 2025 CurrencyBuddy. Empowering smarter currency decisions.</p>
+    </div>
   </footer>
 </body>
 </html>
-<link rel="stylesheet" href="../style.css">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest Rates and Inflation</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interest & Inflation | CurrencyBuddy</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header>
-    <h1>Interest Rates & Inflation</h1>
-  </header>
-
-  <main>
-    <p>Interest rates and inflation have significant impacts on exchange rates. When a country's interest rates rise, it often attracts foreign capital, increasing demand for its currency and appreciating its value. Conversely, high inflation generally devalues a currency due to reduced purchasing power.</p>
-
-    <table>
-      <tr>
-        <th>Factor</th>
-        <th>Effect on Currency</th>
-      </tr>
-      <tr>
-        <td>High Interest Rates</td>
-        <td>Attracts investors, strengthens currency</td>
-      </tr>
-      <tr>
-        <td>High Inflation</td>
-        <td>Reduces currency value, deters investment</td>
-      </tr>
-    </table>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 CurrencyBuddy</p>
-  </footer>
-</body>
-</html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
